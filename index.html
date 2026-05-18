@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nyi Nyi Pyae Han · DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo"><span class="accent">~/</span>Nyi Nyi Pyae Han</div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#services">services</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="terminal-prompt">
+        <span class="prompt-prefix">$ whoami</span>
+        <span class="cursor">█</span>
+      </div>
+      <h1 class="hero-name">Nyi Nyi Pyae Han</h1>
+      <div class="hero-title">
+        <span class="role-tag">Network Engineer</span>
+        <span class="arrow">→</span>
+        <span class="role-tag highlight">DevOps Engineer</span>
+      </div>
+      <p class="hero-desc">
+        Building reliable infrastructure at the intersection of networking and cloud. 
+        Kubernetes, Docker, AWS, Azure — infrastructure as code, pipelines as craft.
+      </p>
+      <div class="hero-stack">
+        <span>Linux</span><span>Docker</span><span>Kubernetes</span>
+        <span>AWS</span><span>Azure</span><span>CI/CD</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="window-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="window-title">infrastructure.yml</span>
+        </div>
+        <pre class="code-content"><span class="c-key">apiVersion</span>: <span class="c-val">apps/v1</span>
+<span class="c-key">kind</span>: <span class="c-val">Deployment</span>
+<span class="c-key">metadata</span>:
+  <span class="c-key">name</span>: <span class="c-val">my-app</span>
+<span class="c-key">spec</span>:
+  <span class="c-key">replicas</span>: <span class="c-num">3</span>
+  <span class="c-key">selector</span>:
+    <span class="c-key">matchLabels</span>:
+      <span class="c-key">app</span>: <span class="c-val">my-app</span>
+  <span class="c-key">template</span>:
+    <span class="c-key">spec</span>:
+      <span class="c-key">containers</span>:
+      - <span class="c-key">name</span>: <span class="c-val">app</span>
+        <span class="c-key">image</span>: <span class="c-val">app:latest</span>
+        <span class="c-key">ports</span>:
+        - <span class="c-key">containerPort</span>: <span class="c-num">8080</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>Network Engineer making the leap into DevOps</strong>, bringing years of deep infrastructure knowledge into the world of cloud-native tools and automation.
+          </p>
+          <p>
+            My networking background gives me an edge that many DevOps engineers lack — I understand what happens at every layer of the stack, from packet routing to container orchestration. I've been honing my skills with <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>AWS</strong>, and <strong>Azure</strong> while running Linux as my daily driver.
+          </p>
+          <p>
+            I believe great infrastructure should be invisible — scalable, resilient, and automated. I'm looking to join a team where I can grow fast, contribute to real infrastructure challenges, and keep pushing the boundary of what I know.
+          </p>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4>Cloud & Infra</h4>
+              <ul>
+                <li>AWS (EC2, S3, VPC, IAM)</li>
+                <li>Azure (VMs, AKS, Blob)</li>
+                <li>Linux (Ubuntu, CentOS)</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4>Containers & Orchestration</h4>
+              <ul>
+                <li>Docker / Docker Compose</li>
+                <li>Kubernetes (K8s)</li>
+                <li>Helm Charts</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4>Networking</h4>
+              <ul>
+                <li>BGP / OSPF / MPLS</li>
+                <li>VLANs / VPNs / Firewalls</li>
+                <li>Network Automation</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4>Tools & Practices</h4>
+              <ul>
+                <li>Git / GitHub Actions</li>
+                <li>Terraform (learning)</li>
+                <li>Bash / Python scripting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="about-aside">
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Years in Networking</span>
+          </div>
+          <!-- <div class="stat-card">
+            <span class="stat-num">AWS</span>
+            <span class="stat-label">Cloud Certified</span>
+          </div> -->
+          <div class="cert-badge">
+            <div data-iframe-width="250" data-iframe-height="250" data-share-badge-id="29311447-7d40-4837-af79-f0056aeb7188" data-share-badge-host="https://www.credly.com"></div>
+          </div>
+          <div class="cert-badge">
+            <div data-iframe-width="250" data-iframe-height="250" data-share-badge-id="16153906-25c0-4329-9746-909476bab398" data-share-badge-host="https://www.credly.com">            
+            </div>
+          </div>
+          <!-- <div class="stat-card">
+            <span class="stat-num">K8s</span>
+            <span class="stat-label">Container Orchestration</span>
+          </div> -->
+          <!-- <div class="cert-badge">
+            <div class="badge-icon">▣</div>
+            <div>
+              <div class="badge-title">CKA Prep</div>
+              <div class="badge-sub">Certified Kubernetes Administrator</div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Services</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="services-intro">
+        Alongside my engineering career, I run freelance IT services under <strong>ITZone IT Solutions</strong> — delivering hands-on technical work for businesses and homes on a monthly retainer or part-time basis.
+      </p>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🖥️</div>
+          <h3>IT Services</h3>
+          <p>End-to-end IT support and management — hardware troubleshooting, software setup, server maintenance, and user support for businesses on a monthly or part-time basis.</p>
+          <ul class="service-list">
+            <li>Hardware & software troubleshooting</li>
+            <li>Server setup & maintenance</li>
+            <li>IT asset management</li>
+            <li>Monthly retainer or ad-hoc support</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔌</div>
+          <h3>Fiber & Cat.6 Cabling & Splicing</h3>
+          <p>Professional structured cabling installation for offices, buildings, and data centers. Fiber optic splicing, termination, and testing using industry-standard tools.</p>
+          <ul class="service-list">
+            <li>Fiber optic splicing & termination</li>
+            <li>Cat.6 structured cabling</li>
+            <li>Cable testing & certification</li>
+            <li>Patch panel & rack installation</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📷</div>
+          <h3>CCTV Installation</h3>
+          <p>Full CCTV system design and installation for residential and commercial clients. IP and analog camera setup with remote viewing configuration and NVR/DVR management.</p>
+          <ul class="service-list">
+            <li>IP & analog camera installation</li>
+            <li>NVR / DVR configuration</li>
+            <li>Remote viewing setup</li>
+            <li>Site survey & system design</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Network Installation & Configuration</h3>
+          <p>Complete network setup from scratch — routers, switches, access points, firewalls, and VLANs. Designed for reliability and security from day one.</p>
+          <ul class="service-list">
+            <li>Router & switch configuration</li>
+            <li>WiFi access point deployment</li>
+            <li>VLAN & firewall setup</li>
+            <li>VPN & remote access</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="services-cta">
+        <p>Interested in any of these services?</p>
+        <a href="#contact" class="btn-primary">Get a Quote →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2>Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2018 - 2020</span>
+            </div>
+            <h3>IT Support Technician</h3>
+            <div class="timeline-company">Myo Thein Electronics · Full-time</div>
+            <ul>
+              <li>Delivered technical support for hardware, software, and network issues</li>
+              <li>Managed user accounts and permissions</li>
+              <li>Maintained VoIP systems (IPPBX, SIP, gateways)</li>
+              <li>Conducted user training and created documentation</li>
+              <li>Ensured smooth daily IT operations</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Window Server</span><span>Window</span><span>VOIP</span><span>Unifi Network</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2020 - 2021</span>
+            </div>
+            <h3>IT Officer</h3>
+            <div class="timeline-company">CP Motor · Full-time</div>
+            <ul>
+              <li>Managed IT infrastructure, including servers, network devices, and security systems</li>
+              <li>Provided technical support and resolved system/network issues efficiently</li>
+              <li>Implemented access control and security policies</li>
+              <li>Assisted in system upgrades, deployments, and IT projects</li>
+              <li>Maintained backup systems and documentation</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Window</span><span>Linux</span><span>VPN</span><span>Firewall</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2022 — 2025</span>
+              <!-- <span class="timeline-tag">Current</span> -->
+            </div>
+            <h3>Senior Network Engineer</h3>
+            <div class="timeline-company">MyanmarAPN · Full-time</div>
+            <ul>
+              <li>Led monitoring and maintenance of core network infrastructure, ensuring high availability
+and optimal performance</li>
+              <li>Configured and managed routers, switches, firewalls, and VPN systems across
+production environments</li>
+              <li>Performed real-time monitoring and resolved incidents within SLA</li>
+              <li>Conducted root cause analysis (RCA) and implemented preventive solutions</li>
+              <li>Maintained detailed network documentation and topology diagrams</li>
+              <li>Supported data center operations, including hardware installation and cabling</li>
+              <li>Collaborated with teams to improve system reliability and uptime</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Cisco</span><span>Mikrotik</span><span>BGP</span><span>VLAN</span><span>VPN</span><span>Firewall</span><span>ESXI</span><span>Datacenter</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot accent-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2022 — Present</span>
+              <span class="timeline-tag">Freelance</span>
+            </div>
+            <h3>Freelance IT Engineer</h3>
+            <div class="timeline-company">ITZone IT Solutions · Part-time / Monthly Retainer</div>
+            <ul>
+              <li>Provide end-to-end IT support and infrastructure services for SME clients</li>
+              <li>Install and configure enterprise networks — routers, switches, firewalls, and WiFi</li>
+              <li>Deploy fiber optic and Cat.6 structured cabling for offices and commercial buildings</li>
+              <li>Design and install CCTV systems with remote monitoring for residential and business clients</li>
+              <li>Architected and deployed <a href="https://star-phs.com" target="_blank" style="color:var(--accent)">star-phs.com</a> — production hosting on AWS Lightsail, domain/CDN via Cloudflare, and business email via AWS SES within a low-budget constraint</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Fiber Optic</span><span>Cat.6</span><span>CCTV</span><span>Cisco</span><span>Mikrotik</span><span>Unifi</span><span>Ruijie&Ruyee</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item devops">
+          <div class="timeline-dot accent-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2025 — NOW</span>
+              <span class="timeline-tag learning">Self-Study</span>
+            </div>
+            <h3>DevOps Transition · Personal Development</h3>
+            <div class="timeline-company">Independent · Side Projects & Labs</div>
+            <ul>
+              <li>Deployed multi-node Kubernetes clusters on home lab Linux servers</li>
+              <li>Built CI/CD pipelines using GitHub Actions for personal projects</li>
+              <li>Completed AWS Cloud Practitioner and working toward Solutions Architect</li>
+              <li>Studied Terraform for infrastructure-as-code on Azure and AWS</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>K8s</span><span>AWS</span><span>Azure</span><span>GitHub Actions</span><span>Terraform</span>
+            </div>
+          </div>
+        
+      </div>
+
+      <div class="resume-cta">
+        <a href="data/resume.pdf" class="btn-primary" download>↓ Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured live-project">
+          <div class="project-header">
+            <span class="project-icon">🌐</span>
+            <div class="project-links">
+              <span class="live-badge">● LIVE</span>
+              <a href="https://star-phs.com/" target="_blank" title="Visit Site">↗</a>
+            </div>
+          </div>
+          <h3>star-phs.com — Production Website & Email Infrastructure</h3>
+          <p>Designed and deployed a full production web and email stack for a real client on a tight budget. Hosted on <strong>AWS Lightsail</strong> for cost efficiency, domain managed via <strong>Cloudflare</strong> for DNS and CDN, and transactional email handled through <strong>AWS SES</strong>. Configured MX, SPF, DKIM, and DMARC records to ensure reliable email delivery.</p>
+          <div class="project-tech">
+            <span>AWS Lightsail</span><span>AWS SES</span><span>Cloudflare</span><span>DNS</span><span>SPF/DKIM</span><span>Linux</span>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <span class="project-icon">⎈</span>
+            <div class="project-links">
+              <a href="https://github.com/Nyi-sudo/devops-local-cicd" target="_blank" title="GitHub">↗</a>
+            </div>
+          </div>
+          <h3>Home Lab Kubernetes Cluster</h3>
+          <p>Built a production-grade multi-node K8s cluster on bare-metal Linux servers. Includes Ingress controller, persistent volumes, monitoring with Prometheus + Grafana, and automated deployments via GitHub Actions.</p>
+          <div class="project-tech">
+            <span>Kubernetes</span><span>Linux</span><span>Prometheus</span><span>Grafana</span><span>GitHub Actions</span>
+          </div>
+        </div>
+
+        <!-- <div class="project-card featured">
+          <div class="project-header">
+            <span class="project-icon">☁</span>
+            <div class="project-links">
+              <a href="https://github.com/Nyi-sudo" target="_blank" title="GitHub">↗</a>
+            </div>
+          </div>
+          <h3>AWS VPC & Network Architecture</h3>
+          <p>Designed a secure multi-tier VPC on AWS using Terraform. Includes public/private subnets, NAT gateways, security groups, and site-to-site VPN connecting simulated on-prem to cloud — drawing on my networking background.</p>
+          <div class="project-tech">
+            <span>AWS</span><span>Terraform</span><span>VPC</span><span>VPN</span><span>IAM</span>
+          </div>
+        </div> -->
+
+        <!-- <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🐳</span>
+            <div class="project-links">
+              <a href="https://github.com/Nyi-sudo" target="_blank" title="GitHub">↗</a>
+            </div>
+          </div>
+          <h3>Dockerized App Stack</h3>
+          <p>Containerized a full-stack web application using Docker Compose with Nginx reverse proxy, app server, and PostgreSQL. Configured health checks and restart policies.</p>
+          <div class="project-tech">
+            <span>Docker</span><span>Nginx</span><span>PostgreSQL</span><span>Compose</span>
+          </div>
+        </div> -->
+
+        <!-- <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">⚡</span>
+            <div class="project-links">
+              <a href="https://github.com/Nyi-sudo" target="_blank" title="GitHub">↗</a>
+            </div>
+          </div>
+          <h3>Network Automation Scripts</h3>
+          <p>Python + Netmiko scripts to automate configuration backups, VLAN auditing, and compliance checks across 30+ Cisco devices. Reduced manual audit time from hours to minutes.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Netmiko</span><span>Cisco IOS</span><span>Bash</span>
+          </div>
+        </div> -->
+
+        <!-- <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🔷</span>
+            <div class="project-links">
+              <a href="https://github.com/Nyi-sudo" target="_blank" title="GitHub">↗</a>
+            </div>
+          </div>
+          <h3>Azure AKS Deployment</h3>
+          <p>Deployed a containerized application to Azure Kubernetes Service (AKS). Set up Azure Container Registry, configured Helm charts, and integrated with Azure Monitor for logging.</p>
+          <div class="project-tech">
+            <span>Azure</span><span>AKS</span><span>Helm</span><span>ACR</span><span>Monitor</span>
+          </div>
+        </div> -->
+
+        <!-- <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🔁</span>
+            <div class="project-links">
+              <a href="https://github.com/Nyi-sudo" target="_blank" title="GitHub">↗</a>
+            </div>
+          </div>
+          <h3>CI/CD Pipeline with GitHub Actions</h3>
+          <p>Configured a full CI/CD pipeline — lint, test, build Docker image, push to registry, and deploy to K8s cluster — triggered on every pull request and merge to main.</p>
+          <div class="project-tech">
+            <span>GitHub Actions</span><span>Docker</span><span>K8s</span><span>YAML</span>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <!-- <section id="blog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>Blog</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-date">May 2025</span>
+            <span class="blog-tag">Kubernetes</span>
+          </div>
+          <h3><a href="#">From Network Engineer to DevOps: What I Wish I Knew Earlier</a></h3>
+          <p>The mental model shift from thinking in VLANs and routing tables to pods, services, and namespaces — and why network engineers have a secret advantage.</p>
+          <a href="#" class="read-more">Read more →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-date">Apr 2025</span>
+            <span class="blog-tag">AWS</span>
+          </div>
+          <h3><a href="#">Building a Secure VPC: A Network Engineer's Perspective</a></h3>
+          <p>How traditional networking concepts like subnetting, ACLs, and routing tables map directly to AWS VPC, Security Groups, and Route Tables — with Terraform examples.</p>
+          <a href="#" class="read-more">Read more →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-date">Mar 2025</span>
+            <span class="blog-tag">Docker</span>
+          </div>
+          <h3><a href="#">Setting Up a Home Lab K8s Cluster on Old Hardware</a></h3>
+          <p>Step-by-step walkthrough of turning three old laptops into a fully functioning Kubernetes cluster — with flannel CNI, Ingress, and persistent storage.</p>
+          <a href="#" class="read-more">Read more →</a>
+        </article>
+
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2>Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-text">
+          <h3>Let's build something together.</h3>
+          <p>I'm actively looking for DevOps / Cloud Engineer opportunities. If you're hiring, collaborating, or just want to talk infrastructure — my inbox is open.</p>
+          <div class="contact-links">
+            <a href="mailto:nnpyaehan@gmail.com" class="contact-item">
+              <span class="contact-icon">✉</span>
+              <span>Mail Me</span>
+            </a>
+            <a href="https://github.com/Nyi-sudo" target="_blank" class="contact-item">
+              <span class="contact-icon">⌥</span>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nyi-nyi-pyae-han-aab0431aa/" target="_blank" class="contact-item">
+              <span class="contact-icon">in</span>
+              <span>linkedin</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/xqenvond" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-logo"><span class="accent">~/</span>Nyi Nyi Pyae Han</span>
+        <span class="footer-copy">Built with HTML, CSS & a passion for infrastructure.</span>
+        <span class="footer-year">2026</span>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
