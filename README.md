@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Nyi Nyi</h1>
 <h3 align="center">Freelance Network Engineer & Still Learning to Become DevOps Engineer!!</h3>
 
-- 🔭 I’m currently working on **Freelance Network Engineer**
+- 🔭 I’m currently working on **Freelance IT Engineer At ITZone IT Solutions**
 
-- 🌱 I’m currently learning **Dev & Ops**
+- 🌱 I’m currently learning **DevOps**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
